@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DILIPWEBAPP</title>
+    <link rel="stylesheet" href="styel.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="RealPhone_WebPage_Images/images/logo.png" alt="">
+            </div>
+            <div class="nav-link">
+                <ul>
+                    <li><a href="HOME">HOME</a></li>
+                    <li><a href="PHONE">PHONE</a></li>
+                    <li><a href="ACCESSORIES">ACCESSORIES</a></li>
+                    <li><a href="CART">CART</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="RealPhone_WebPage_Images/images/mobile.png" alt="" class="mobile">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="RealPhone_WebPage_Images/images/camera.png" alt="">
+                    <div>
+                        <h1>CAMERA</h1>
+                        <P>12MP,WIDE ANGEL LENS </P>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="RealPhone_WebPage_Images/images/processor.png" alt="">
+                    <div>
+                        <h1>PROCESSER</h1>
+                        <P>SANPDEAGON OCTA-CORE 11NM</P>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="RealPhone_WebPage_Images/images/display.png" alt="">
+                    <div>
+                        <h1>DISPLAY</h1>
+                        <P>6.5 MINI-DROP FULLSCREEN</P>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="RealPhone_WebPage_Images/images/battery.png" alt="">
+                    <div>
+                        <h1>BATTERY LIFE</h1>
+                        <P>5000MAH, 720HRS STANDBY</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="RealPhone_WebPage_Images/images/arrow.png" alt="" id="upbtn">
+            <h3>FEATURE</h3>
+            <img src="RealPhone_WebPage_Images/images/arrow.png" alt="" id="downbtn">
+        </div>
+    </div>
+
+    <script>
+        var circle = document.getElementById("circle")
+        var upbtn = document.getElementById("upbtn")
+        var downbtn = document.getElementById("downbtn")
+
+        var rotatevalue = circle.style.transform;
+        var rotatesum;
+
+        upbtn.onclick = function () {
+            rotatesum = rotatevalue + "rotate(-90deg)";
+            circle.style.transform = rotatesum;
+            rotatevalue = rotatesum
+        }
+        downbtn.onclick = function () {
+            rotatesum = rotatevalue + "rotate(-90deg)";
+            circle.style.transform = rotatesum;
+            rotatevalue = rotatesum
+        }
+
+
+    </script>
+
+</body>
+
+</html>
